@@ -7,7 +7,6 @@ const postImage = async (req: Request, res: Response) => {
   if (image) {
     return res.status(200).send({ status: 200, path: image.filename });
   }
-
   return res.status(500).send({ status: 500, err: "File upload error" });
 };
 
