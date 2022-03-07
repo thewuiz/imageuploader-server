@@ -20,10 +20,8 @@ const FileFilter = (
   cb: FileFilterCallback
 ) => {
   if (extensionesValida.includes(file.mimetype)) {
-    //correct format
     return cb(null, true);
   } else {
-    //wrong format
     return cb(null, false);
   }
 };
